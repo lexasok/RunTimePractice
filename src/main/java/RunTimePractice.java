@@ -31,7 +31,21 @@ public class RunTimePractice {
         long startTime = System.currentTimeMillis();
 
         char[] chars = {'a', 'b', 'f'};
-        int[] repetitions = findNumberOfArrayRepetitions("asfdsadboihasdfn", chars);
+        int[] repetitions = findNumberOfArrayRepetitions("asfdsadboihasdfasdasdsfasdaswlkdsnasdo" +
+                "dsadboihasdfasdasdsfasdaswlkdsnasdodsadboihasdfasdasdsfasdaswlkdsnasdo" +
+                "dsadboihasdfasdasdsfasdaswlkdsnasdodsadboihasdfasdasdsfasdaswlkdsnasdo" +
+                "dsadboihasdfasdasdsfasdaswlkdsnasdodsadboihasdfasdasdsfasdaswlkdsnasdo" +
+                "dsadboihasdfasdasdsfasdaswlkdsnasdodsadboihasdfasdasdsfasdaswlkdsnasdo" +
+                "dsadboihasdfasdasdsfasdaswlkdsnasdodsadboihasdfasdasdsfasdaswlkdsnasdo" +
+                "dsadboihasdfasdasdsfasdaswlkdsnasdodsadboihasdfasdasdsfasdaswlkdsnasdo" +
+                "pqejmsdfv;cvmnsdf[p;wefjdsv.;msdfgsdfg;sdfowerfjwefroqwrqweqweqweqwww" +
+                "pqejmsdfv;cvmnsdf[p;wefjdsv.;msdafgsdfg;sdfowerfjwefroqwrqweqweqweqwww" +
+                "pqejmsdfv;cvmnsdf[p;wefjdsv.;msdfgsdfg;sdfowerfjwefroqwrqweqweqweqwww" +
+                "pqejmsdfv;cvmnsdf[p;wefjdsv.;msdfgsdfg;sdfowerfjwefroqwrqweqweqweqwww" +
+                "pqejmsdfv;cvmnsdf[p;wefjdsv.;msdfgsdfg;sdfowerfjwefroqwrqweqweqweqwww" +
+                "pqejmsdfv;cvmnsdf[p;wefjdsv.;msdfgsdfg;sdfowerfjwefroqwrqweqweqweqwww" +
+                "pqejmsdfv;cvmnsdf[p;wefjdsv.;msdfgsdfg;sdfowerfjwefroqwrqweqweqweqwww" +
+                "pqejmsdfv;cvmnsdf[p;wefjdsv.;msdfgsdfg;sdfowerfjwefroqwrqweqweqweqwwwn", chars);
 
         for (int i = 0; i < repetitions.length; i ++) {
             System.out.print(repetitions[i] + " ");
