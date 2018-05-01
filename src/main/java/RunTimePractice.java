@@ -1,4 +1,4 @@
-
+import java.util.ArrayList;
 
 public class RunTimePractice {
 
@@ -12,9 +12,18 @@ public class RunTimePractice {
         return sum;
     }
 
-    public static int findNumberOfArrayRepetitions(String str, char[] charArray) {
-        int sum = 0;
-        return sum;
+    public static int[] findNumberOfArrayRepetitions(String str, char[] charArray) {
+        int[] sums = new int[charArray.length];
+
+        for (int i = 0; i < str.length(); i++) {
+            for (int j = 0; j < charArray.length; j++) {
+                if (str.charAt(i) == charArray[j]) {
+                    sums[i]++;
+                }
+            }
+        }
+
+        return sums;
     }
 
 
