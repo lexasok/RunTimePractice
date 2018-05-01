@@ -42,7 +42,6 @@ public class RunTimePractice {
         }
 
         for (int i = 0; i < chars.length; i++) {
-            int sum;
             if (!map.containsKey(chars[i])) {
                 sums[i] = 0;
             } else {
@@ -59,7 +58,7 @@ public class RunTimePractice {
 
 
         //data
-        char[] chars = {'a', 'b', 'f', 'z', ' ', 'r', 'm', 'u', 'q'};
+        char[] chars = {'a', 'b', 'f', 'z', ' ', 'r', 'm', 'u', 'q', 'a', 'b', 'f', 'z', ' ', 'r', 'm', 'u', 'q', 'a', 'b', 'f', 'z', ' ', 'r', 'm', 'u', 'q'};
         String str = "asfdsadboihasdfasdasdsfasdaswlkdsnasdo" +
                 "dsadboihasdfasdasdsfasdaswlkdsnasdodsadboihasdfasdasdsfasdaswlkdsnasdo" +
                 "dsadboihasdfasdasdsfasdaswlkdsnasdodsadb oihasdfasdasdsfasdaswlkdsnasdo" +
