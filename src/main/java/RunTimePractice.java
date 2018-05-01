@@ -16,7 +16,7 @@ public class RunTimePractice {
     public static void main(String[] args) {
         long startTime = System.currentTimeMillis();
 
-        System.out.println(findNumberOfRepeticions("abca", 'a'));
+        System.out.println(findNumberOfRepeticions("abcdefffgffssss", 'f'));
 
         long endTime = System.currentTimeMillis();
         long duration = endTime - startTime;
