@@ -26,6 +26,10 @@ public class RunTimePractice {
         return sums;
     }
 
+    public static int[] findNumberOfArrayRepetitionsV2(String str, char[] chars) {
+        return null;
+    }
+
 
     public static void main(String[] args) {
         long startTime = System.currentTimeMillis();
