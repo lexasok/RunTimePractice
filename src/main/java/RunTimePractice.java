@@ -18,7 +18,6 @@ public class RunTimePractice {
 
         System.out.println(findNumberOfRepeticions("abca", 'a'));
 
-
         long endTime = System.currentTimeMillis();
         long duration = endTime - startTime;
         System.out.println("Test " + duration + " ms");
