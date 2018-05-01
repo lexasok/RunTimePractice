@@ -58,7 +58,13 @@ public class RunTimePractice {
 
 
         //data
-        char[] chars = {'a', 'b', 'f', 'z', ' ', 'r', 'm', 'u', 'q', 'a', 'b', 'f', 'z', ' ', 'r', 'm', 'u', 'q', 'a', 'b', 'f', 'z', ' ', 'r', 'm', 'u', 'q', 'b', 'f', 'z', ' ', 'r', 'm', 'u', 'q', 'a', 'b', 'f', 'z', ' ', 'r', 'm', 'u', 'q', 'a', 'b', 'f', 'z', ' ', 'r', 'm', 'u', 'q', 'b', 'f', 'z', ' ', 'r', 'm', 'u', 'q', 'a', 'b', 'f', 'z', ' ', 'r', 'm', 'u', 'q', 'a', 'b', 'f', 'z', ' ', 'r', 'm', 'u', 'q', 'b', 'f', 'z', ' ', 'r', 'm', 'u', 'q', 'a', 'b', 'f', 'z', ' ', 'r', 'm', 'u', 'q', 'a', 'b', 'f', 'z', ' ', 'r', 'm', 'u', 'q', 'b', 'f', 'z', ' ', 'r', 'm', 'u', 'q', 'a', 'b', 'f', 'z', ' ', 'r', 'm', 'u', 'q', 'a', 'b', 'f', 'z', ' ', 'r', 'm', 'u', 'q'};
+        char[] chars = {'a', 'b', 'f', 'z', ' ', 'r', 'm', 'u', 'q', 'a', 'b', 'f', 'z', ' ', 'r', 'm', 'u', 'q', 'a',
+                'b', 'f', 'z', ' ', 'r', 'm', 'u', 'q', 'b', 'f', 'z', ' ', 'r', 'm', 'u', 'q', 'a', 'b', 'f', 'z', ' ',
+                'r', 'm', 'u', 'q', 'a', 'b', 'f', 'z', ' ', 'r', 'm', 'u', 'q', 'b', 'f', 'z', ' ', 'r', 'm', 'u', 'q',
+                'a', 'b', 'f', 'z', ' ', 'r', 'm', 'u', 'q', 'a', 'b', 'f', 'z', ' ', 'r', 'm', 'u', 'q', 'b', 'f', 'z',
+                ' ', 'r', 'm', 'u', 'q', 'a', 'b', 'f', 'z', ' ', 'r', 'm', 'u', 'q', 'a', 'b', 'f', 'z', ' ', 'r', 'm',
+                'u', 'q', 'b', 'f', 'z', ' ', 'r', 'm', 'u', 'q', 'a', 'b', 'f', 'z', ' ', 'r', 'm', 'u', 'q', 'a', 'b',
+                'f', 'z', ' ', 'r', 'm', 'u', 'q'};
         String str = "asfdsadboihasdfasdasdsfasdaswlkdsnasdo" +
                 "dsadboihasdfasdasdsfasdaswlkdsnasdodsadboihasdfasdasdsfasdaswlkdsnasdo" +
                 "dsadboihasdfasdasdsfasdaswlkdsnasdodsadb oihasdfasdasdsfasdaswlkdsnasdo" +
