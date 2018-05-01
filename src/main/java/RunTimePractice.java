@@ -18,7 +18,7 @@ public class RunTimePractice {
         for (int i = 0; i < str.length(); i++) {
             for (int j = 0; j < charArray.length; j++) {
                 if (str.charAt(i) == charArray[j]) {
-                    sums[i]++;
+                    sums[j] = sums[j] + 1;
                 }
             }
         }
@@ -30,7 +30,8 @@ public class RunTimePractice {
     public static void main(String[] args) {
         long startTime = System.currentTimeMillis();
 
-        System.out.println(findNumberOfRepetitions("abcdefffgffssss", 'f'));
+        char[] chars = {'a', 'b', 'f'};
+        System.out.println(findNumberOfArrayRepetitions("abcdefffgffssss", chars));
 
         long endTime = System.currentTimeMillis();
         long duration = endTime - startTime;
