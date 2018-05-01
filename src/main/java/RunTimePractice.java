@@ -31,10 +31,14 @@ public class RunTimePractice {
         long startTime = System.currentTimeMillis();
 
         char[] chars = {'a', 'b', 'f'};
-        System.out.println(findNumberOfArrayRepetitions("abcdefffgffssss", chars));
+        int[] repetitions = findNumberOfArrayRepetitions("asfdsadboihasdfn", chars);
+
+        for (int i = 0; i < repetitions.length; i ++) {
+            System.out.print(repetitions[i] + " ");
+        }
 
         long endTime = System.currentTimeMillis();
         long duration = endTime - startTime;
-        System.out.println("Test " + duration + " ms");
+        System.out.println("\nTest " + duration + " ms");
     }
 }
