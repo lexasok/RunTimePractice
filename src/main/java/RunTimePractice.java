@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class RunTimePractice {
 
@@ -27,7 +28,29 @@ public class RunTimePractice {
     }
 
     public static int[] findNumberOfArrayRepetitionsV2(String str, char[] chars) {
-        return null;
+        int[] sums = new int[chars.length];
+        HashMap<Character, Integer> map = new HashMap<Character, Integer>();
+
+        for (int i = 0; i < str.length(); i++) {
+            char currentChar = str.charAt(i);
+            if (!map.containsKey(currentChar)) {
+                map.put(currentChar, 1);
+            } else {
+                int currentSum = map.get(currentChar);
+                map.put(currentChar, currentSum + 1);
+            }
+        }
+
+        for (int i = 0; i < chars.length; i++) {
+            int sum;
+            if (!map.containsKey(chars[i])) {
+                sums[i] = 0;
+            } else {
+                sums[i] = map.get(chars[i]);
+            }
+        }
+
+        return sums;
     }
 
 
