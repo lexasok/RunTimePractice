@@ -55,31 +55,63 @@ public class RunTimePractice {
 
 
     public static void main(String[] args) {
-        long startTime = System.currentTimeMillis();
 
-        char[] chars = {'a', 'b', 'f'};
-        int[] repetitions = findNumberOfArrayRepetitions("asfdsadboihasdfasdasdsfasdaswlkdsnasdo" +
+
+
+        //data
+        char[] chars = {'a', 'b', 'f', 'z', ' ', 'r', 'm', 'u', 'q'};
+        String str = "asfdsadboihasdfasdasdsfasdaswlkdsnasdo" +
+                "dsadboihasdfasdasdsfasdaswlkdsnasdodsadboihasdfasdasdsfasdaswlkdsnasdo" +
+                "dsadboihasdfasdasdsfasdaswlkdsnasdodsadb oihasdfasdasdsfasdaswlkdsnasdo" +
+                "dsadboihasdfasdasdsfasdaswlkdsnasdodsadbo ihasdfasdasdsfasdaswlkdsnasdo" +
                 "dsadboihasdfasdasdsfasdaswlkdsnasdodsadboihasdfasdasdsfasdaswlkdsnasdo" +
                 "dsadboihasdfasdasdsfasdaswlkdsnasdodsadboihasdfasdasdsfasdaswlkdsnasdo" +
-                "dsadboihasdfasdasdsfasdaswlkdsnasdodsadboihasdfasdasdsfasdaswlkdsnasdo" +
-                "dsadboihasdfasdasdsfasdaswlkdsnasdodsadboihasdfasdasdsfasdaswlkdsnasdo" +
-                "dsadboihasdfasdasdsfasdaswlkdsnasdodsadboihasdfasdasdsfasdaswlkdsnasdo" +
-                "dsadboihasdfasdasdsfasdaswlkdsnasdodsadboihasdfasdasdsfasdaswlkdsnasdo" +
-                "pqejmsdfv;cvmnsdf[p;wefjdsv.;msdfgsdfg;sdfowerfjwefroqwrqweqweqweqwww" +
+                "dsadboihasdfasdasds fasdaswlkdsnasdodsadboihasdfasdasdsfasdaswlkdsnasdo" +
+                "pqejmsdfv;cvmnsdf[p;wefjdsv.;msdfgsdfg;sdf owerfjwefroqwrqweqweqweqwww" +
                 "pqejmsdfv;cvmnsdf[p;wefjdsv.;msdafgsdfg;sdfowerfjwefroqwrqweqweqweqwww" +
                 "pqejmsdfv;cvmnsdf[p;wefjdsv.;msdfgsdfg;sdfowerfjwefroqwrqweqweqweqwww" +
                 "pqejmsdfv;cvmnsdf[p;wefjdsv.;msdfgsdfg;sdfowerfjwefroqwrqweqweqweqwww" +
                 "pqejmsdfv;cvmnsdf[p;wefjdsv.;msdfgsdfg;sdfowerfjwefroqwrqweqweqweqwww" +
                 "pqejmsdfv;cvmnsdf[p;wefjdsv.;msdfgsdfg;sdfowerfjwefroqwrqweqweqweqwww" +
                 "pqejmsdfv;cvmnsdf[p;wefjdsv.;msdfgsdfg;sdfowerfjwefroqwrqweqweqweqwww" +
-                "pqejmsdfv;cvmnsdf[p;wefjdsv.;msdfgsdfg;sdfowerfjwefroqwrqweqweqweqwwwn", chars);
+                "pqejmsdfv;cvmnsdf[p;wefjdsv.;msdfgsdfg;sdfowerfjwefroqwrqweqweqweqwwwn";
 
+        //V1 method
+        System.out.println("V1 method");
+
+        //Time fixing
+        long startTime = System.currentTimeMillis();
+
+        //method
+        int[] repetitions = findNumberOfArrayRepetitions(str, chars);
+
+        //print values
         for (int i = 0; i < repetitions.length; i ++) {
             System.out.print(repetitions[i] + " ");
         }
 
+        //time fixing
         long endTime = System.currentTimeMillis();
         long duration = endTime - startTime;
+        System.out.println("\nTest " + duration + " ms");
+
+        //V2 method
+        System.out.println("\nV2 method");
+
+        //Time fixing
+        startTime = System.currentTimeMillis();
+
+        //method
+        repetitions = findNumberOfArrayRepetitionsV2(str, chars);
+
+        //print values
+        for (int i = 0; i < repetitions.length; i ++) {
+            System.out.print(repetitions[i] + " ");
+        }
+
+        //time fixing
+        endTime = System.currentTimeMillis();
+        duration = endTime - startTime;
         System.out.println("\nTest " + duration + " ms");
     }
 }
