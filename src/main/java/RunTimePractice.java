@@ -2,7 +2,7 @@
 
 public class RunTimePractice {
 
-    public static int findNumberOfRepeticions(String str, char ch) {
+    public static int findNumberOfRepetitions(String str, char ch) {
         int sum = 0;
         for (int i = 0; i < str.length(); i++) {
             if (str.charAt(i) == ch) {
@@ -12,11 +12,16 @@ public class RunTimePractice {
         return sum;
     }
 
+    public static int findNumberOfArrayRepetitions(String str, char[] charArray) {
+        int sum = 0;
+        return sum;
+    }
+
 
     public static void main(String[] args) {
         long startTime = System.currentTimeMillis();
 
-        System.out.println(findNumberOfRepeticions("abcdefffgffssss", 'f'));
+        System.out.println(findNumberOfRepetitions("abcdefffgffssss", 'f'));
 
         long endTime = System.currentTimeMillis();
         long duration = endTime - startTime;
