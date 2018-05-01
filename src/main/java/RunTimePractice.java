@@ -118,5 +118,6 @@ public class RunTimePractice {
         endTime = System.currentTimeMillis();
         duration = endTime - startTime;
         System.out.println("\nTest " + duration + " ms");
+
     }
 }
